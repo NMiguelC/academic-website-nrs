@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /404
+
+Sitemap: https://nunoacad-afjgewoj.manus.space/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
