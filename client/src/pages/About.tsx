@@ -19,7 +19,7 @@ export default function About() {
     subtitle: "Professor de Ciência Política e Investigador na Universidade do Minho.",
     academicLabel: "Percurso Académico",
     academicTitle: "Rigor científico e sólida formação em Ciência Política",
-    academic1: "Nuno Ribeiro e Silva é Doutor em Ciência Política pela Universidade de Santiago de Compostela. Atualmente, exerce funções como Professor Convidado na Universidade do Minho e é investigador no Centro de Investigação em Ciência Política (CICP).",
+    academic1: "Nuno Ribeiro e Silva é Doutor em Ciência Política — Processos Políticos Contemporâneos, pela Universidade de Santiago de Compostela. Atualmente, exerce funções como Professor Convidado na Universidade do Minho e é investigador no Centro de Investigação em Ciência Política (CICP).",
     academic2: "O seu percurso combina a docência universitária com a investigação nas áreas da Administração Pública, Governação, Políticas Públicas e, de forma especial, a intersecção entre o desporto e as dinâmicas sociopolíticas contemporâneas.",
     researchLabel: "Linha de Investigação Atual",
     researchTitle: "Linha de Investigação Atual",

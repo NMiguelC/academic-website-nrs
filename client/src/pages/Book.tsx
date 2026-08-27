@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import SEOMeta from "@/components/SEOMeta";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const FRONT_COVER = "/manus-storage/a-bola-e-a-bandeira-front-cover_08b70dcb.png";
+const FRONT_COVER = "/images/a-bola-e-a-bandeira-front-cover.webp";
 
 export default function Book() {
   const { t } = useLanguage();
@@ -111,6 +111,15 @@ export default function Book() {
                       </span>
                     ))}
                   </div>
+                </div>
+
+                <div className="mt-10 border-t border-ink/20 pt-8 dark:border-white/20">
+                  <h3 className="font-montserrat text-xs font-bold uppercase tracking-[0.18em] text-primary">
+                    {t("book.audienceTitle")}
+                  </h3>
+                  <p className="mt-3 font-opensans text-base leading-7 text-ink/80 dark:text-foreground/80">
+                    {t("book.audienceDescription")}
+                  </p>
                 </div>
 
                 <div className="mt-10 grid gap-6 border-t border-ink/20 pt-8 sm:grid-cols-2 dark:border-white/20">

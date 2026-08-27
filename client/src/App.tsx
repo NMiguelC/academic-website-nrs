@@ -19,7 +19,6 @@ import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Book from "./pages/Book";
 import Media from "./pages/Media";
-import StrategyReport from "./pages/StrategyReport";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -38,7 +37,6 @@ function Router() {
           <Route path={"/blog"} component={Blog} />
           <Route path={"/book"} component={Book} />
           <Route path={"/media"} component={Media} />
-          <Route path={"/strategy"} component={StrategyReport} />
           <Route path={"/contact"} component={Contact} />
           <Route path={"/404"} component={NotFound} />
           {/* Final fallback route */}

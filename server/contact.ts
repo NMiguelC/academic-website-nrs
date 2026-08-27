@@ -32,10 +32,14 @@ export async function sendContactMessage(rawInput: ContactInput) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const recipient = process.env.CONTACT_RECIPIENT_EMAIL;
+  const recipientEnv = process.env.CONTACT_RECIPIENT_EMAIL;
+  const recipients = recipientEnv
+    ?.split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
   const from = process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
 
-  if (!apiKey || !recipient) {
+  if (!apiKey || !recipients || recipients.length === 0) {
     console.error("[Contact] Email service is not configured");
     throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Email service unavailable" });
   }
@@ -48,7 +52,7 @@ export async function sendContactMessage(rawInput: ContactInput) {
     },
     body: JSON.stringify({
       from,
-      to: [recipient],
+      to: recipients,
       reply_to: input.email,
       subject: `[Website] ${input.subject}`,
       text: buildPlainTextMessage(input),

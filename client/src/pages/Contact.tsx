@@ -7,6 +7,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { trpc } from "@/lib/trpc";
+import SEOMeta from "@/components/SEOMeta";
 
 export default function Contact() {
   const { t, language } = useLanguage();
@@ -41,6 +42,7 @@ export default function Contact() {
 
   return (
     <>
+      <SEOMeta title={t("contact.title")} description={t("contact.subtitle")} />
       <main className="flex-1">
         <section className="bg-gradient-to-br from-primary to-blue-900 py-16 text-white md:py-24">
           <div className="container mx-auto px-4">
@@ -57,7 +59,11 @@ export default function Contact() {
                   <Mail className="text-white" size={32} aria-hidden="true" />
                 </div>
                 <h3 className="mb-2 font-montserrat text-lg font-bold text-foreground">{t("contact.email")}</h3>
-                <p className="font-opensans text-foreground/70">{t("contact.emailDesc")}</p>
+                <p className="font-opensans text-foreground/70">
+                  <a href={`mailto:${siteConfig.email}`} className="hover:text-primary hover:underline">
+                    {siteConfig.email}
+                  </a>
+                </p>
               </div>
 
               <div className="rounded-lg bg-lightGray p-8 text-center dark:bg-card">
@@ -82,7 +88,9 @@ export default function Contact() {
             <div className="mx-auto max-w-2xl">
               <h2 className="mb-8 text-center font-montserrat text-3xl font-bold text-foreground">{t("contact.sendMessage")}</h2>
               <p className="mb-8 text-center font-opensans text-sm text-foreground/70">
-                {pt ? "A mensagem será encaminhada de forma privada. O endereço de destino não é apresentado aos visitantes." : "Your message will be forwarded privately. The destination address is not shown to visitors."}
+                {pt
+                  ? `Pode enviar-me um email diretamente para ${siteConfig.email}, ou usar o formulário abaixo.`
+                  : `You can email me directly at ${siteConfig.email}, or use the form below.`}
               </p>
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

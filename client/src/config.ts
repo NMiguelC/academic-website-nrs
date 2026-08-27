@@ -3,8 +3,8 @@ export const siteConfig = {
   // Personal Information
   name: "Nuno Ribeiro e Silva",
   title: "Professor Universitário | Investigador | Consultor",
-  bio: "Doutor em Gestão Pública / Ciência Política. Professor Convidado Equiparado a Professor Auxiliar na Universidade do Minho, com vasta experiência em Gestão Pública, Administração Pública, Políticas Sociais e Gestão do Conhecimento.",
-  email: "nribeiro@eeg.uminho.pt",
+  bio: "Doutor em Ciência Política — Processos Políticos Contemporâneos (Universidade de Santiago de Compostela) e Professor Convidado Equiparado a Professor Auxiliar na Universidade do Minho desde 2008. A sua investigação situa-se na interseção entre a governação, a administração e gestão pública, as políticas sociais e o estudo do futebol como fenómeno político e identitário.",
+  email: "contact@nunoribeirosilva.com",
   
   // Institution
   institution: "Universidade do Minho",
@@ -15,10 +15,9 @@ export const siteConfig = {
   
   // Professional Links
   socialLinks: {
-    linkedin: "https://linkedin.com/in/seu-perfil",
-    googleScholar: "https://scholar.google.com/citations?user=seu-id",
-    orcid: "https://orcid.org/seu-id",
-    researchGate: "https://researchgate.net/profile/seu-perfil",
+    linkedin: "https://linkedin.com/in/nuno-ribeiro-e-silva-9395414",
+    googleScholar: "https://scholar.google.com/citations?user=EwF6wZYAAAAJ&hl=pt-PT",
+    orcid: "https://orcid.org/0000-0001-8790-7446",
     apcp: "https://www.apcp.pt/pt/socios#n",
   },
   

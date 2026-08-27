@@ -9,7 +9,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import SEOMeta from "@/components/SEOMeta";
 import ProtectedImage from "@/components/ProtectedImage";
 
-const FRONT_COVER = "/manus-storage/a-bola-e-a-bandeira-front-cover_08b70dcb.png";
+const FRONT_COVER = "/images/a-bola-e-a-bandeira-front-cover.webp";
 const PROFILE_PHOTO = "/manus-storage/nuno-ribeiro-e-silva-profile_6d07eb39.jpg";
 
 export default function Home() {

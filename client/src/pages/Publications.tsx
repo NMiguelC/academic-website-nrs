@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import { ExternalLink, BookOpen, FileText } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOMeta from "@/components/SEOMeta";
 
 export default function Publications() {
   const { t } = useLanguage();
@@ -97,6 +98,7 @@ export default function Publications() {
 
   return (
     <>
+      <SEOMeta title={t("publications.title")} description={t("publications.subtitle")} />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16 md:py-24">

@@ -1,6 +1,7 @@
 import { Download, Award, BookOpen, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOMeta from "@/components/SEOMeta";
 
 export default function CV() {
   const { t, language } = useLanguage();
@@ -210,6 +211,7 @@ export default function CV() {
 
   return (
     <>
+      <SEOMeta title={t("cv.title")} description={t("cv.subtitle")} />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16 md:py-24">

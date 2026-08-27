@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import { Users, BookOpen, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOMeta from "@/components/SEOMeta";
 
 export default function Teaching() {
   const { t } = useLanguage();
@@ -30,6 +31,7 @@ export default function Teaching() {
 
   return (
     <>
+      <SEOMeta title={t("teaching.title")} description={t("teaching.subtitle")} />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16 md:py-24">

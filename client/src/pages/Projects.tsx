@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import { Lightbulb, Users, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEOMeta from "@/components/SEOMeta";
 
 export default function Projects() {
   const { t } = useLanguage();
@@ -66,6 +67,7 @@ export default function Projects() {
 
   return (
     <>
+      <SEOMeta title={t("projects.title")} description={t("projects.subtitle")} />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16 md:py-24">
