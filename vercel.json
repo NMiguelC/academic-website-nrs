@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/manus-storage/:path*", "destination": "/api/manus-storage" }
+  ]
+}
