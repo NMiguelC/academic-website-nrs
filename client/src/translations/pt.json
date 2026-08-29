@@ -177,5 +177,11 @@
   "footer": {
     "allRights": "Todos os direitos reservados.",
     "signature": "Futebol, identidade e sociedade"
+  },
+  "cookieConsent": {
+    "title": "Consentimento de cookies",
+    "message": "Este site usa cookies de análise para perceber como é utilizado (páginas visitadas, origem das visitas, etc.). Não usamos cookies de publicidade. Podes aceitar ou recusar em qualquer altura.",
+    "accept": "Aceitar",
+    "decline": "Recusar"
   }
 }
