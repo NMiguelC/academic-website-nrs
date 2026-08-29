@@ -27,12 +27,25 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (formData.website?.trim()) {
+      // Honeypot: silently succeed for bots without sending anything.
+      toast.success(t("contact.success"));
+      setFormData({ name: "", email: "", subject: "", message: "", website: "" });
+      return;
+    }
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formsubmit.co/ajax/contact@nunoribeirosilva.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: `[Website] ${formData.subject}`,
+          message: formData.message,
+          _cc: "contacto@nunoribeirosilva.com",
+          _template: "table",
+        }),
       });
       if (!response.ok) {
         throw new Error("Request failed");
