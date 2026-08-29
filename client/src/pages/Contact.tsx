@@ -6,7 +6,6 @@ import { Mail, MapPin, Linkedin, Globe, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { trpc } from "@/lib/trpc";
 import SEOMeta from "@/components/SEOMeta";
 
 export default function Contact() {
@@ -19,25 +18,32 @@ export default function Contact() {
     message: "",
     website: "",
   });
-
-  const submitContact = trpc.contact.submit.useMutation({
-    onSuccess: () => {
-      toast.success(t("contact.success"));
-      setFormData({ name: "", email: "", subject: "", message: "", website: "" });
-    },
-    onError: () => {
-      toast.error(pt ? "Não foi possível enviar a mensagem. Tente novamente." : "The message could not be sent. Please try again.");
-    },
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    submitContact.mutate(formData);
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+      toast.success(t("contact.success"));
+      setFormData({ name: "", email: "", subject: "", message: "", website: "" });
+    } catch {
+      toast.error(pt ? "Não foi possível enviar a mensagem. Tente novamente." : "The message could not be sent. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -120,9 +126,9 @@ export default function Contact() {
                   <Input id="contact-website" type="text" name="website" value={formData.website} onChange={handleChange} tabIndex={-1} autoComplete="off" />
                 </div>
 
-                <Button type="submit" disabled={submitContact.isPending} className="flex w-full items-center justify-center gap-2 bg-primary font-opensans font-medium text-white transition-all duration-200 hover:bg-blue-900">
-                  {submitContact.isPending && <Loader2 size={18} className="animate-spin" aria-hidden="true" />}
-                  {submitContact.isPending ? t("contact.sending") : t("contact.send")}
+                <Button type="submit" disabled={isSubmitting} className="flex w-full items-center justify-center gap-2 bg-primary font-opensans font-medium text-white transition-all duration-200 hover:bg-blue-900">
+                  {isSubmitting && <Loader2 size={18} className="animate-spin" aria-hidden="true" />}
+                  {isSubmitting ? t("contact.sending") : t("contact.send")}
                 </Button>
               </form>
             </div>

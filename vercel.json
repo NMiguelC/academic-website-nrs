@@ -1,8 +1,5 @@
 {
-  "routes": [
-    { "src": "/manus-storage/(.*)", "dest": "/api" },
-    { "src": "/api/(.*)", "dest": "/api" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/manus-storage/:path*", "destination": "/api" }
   ]
 }
