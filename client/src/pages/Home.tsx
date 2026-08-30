@@ -273,7 +273,7 @@ export default function Home() {
                 src={PROFILE_PHOTO}
                 alt={pt ? "Fotografia de Nuno Ribeiro e Silva" : "Portrait of Nuno Ribeiro e Silva"}
                 loading="lazy"
-                className="h-16 w-12 rounded-sm object-cover object-top grayscale-[15%]"
+                className="h-[74px] w-[55px] rounded-sm object-cover object-top grayscale-[15%]"
               />
               <p className="font-opensans text-xs leading-relaxed text-foreground/65">
                 {pt ? "Uma plataforma de investigação, docência e intervenção pública." : "A platform for research, teaching and public engagement."}
