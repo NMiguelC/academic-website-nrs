@@ -47,6 +47,7 @@ export const siteConfig = {
     { label: "articles", href: "/blog" },
     { label: "media", href: "/media" },
     { label: "research", href: "/projects" },
+    { label: "publications", href: "/publications" },
     { label: "cv", href: "/cv" },
     { label: "contact", href: "/contact" },
   ],

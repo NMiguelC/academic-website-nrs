@@ -7,7 +7,8 @@
     "media": "Media",
     "research": "Research",
     "cv": "CV",
-    "contact": "Contact"
+    "contact": "Contact",
+    "publications": "Publications"
   },
   "home": {
     "title": "Nuno Ribeiro e Silva",
@@ -72,7 +73,8 @@
     "conferenceComm": "Communications at International and National Conferences",
     "interested": "Interested in Collaboration?",
     "interestedDesc": "For more information about my publications, citation metrics or academic collaboration opportunities, please contact me.",
-    "contactMe": "Contact Me"
+    "contactMe": "Contact Me",
+    "bridge": "This body of work stems from my background in Public Administration and Management, a research line that continues alongside my current work on football, identity and politics — both grounded in Political Science."
   },
   "teaching": {
     "title": "Teaching and Academic Supervision",

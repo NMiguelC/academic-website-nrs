@@ -7,7 +7,8 @@
     "media": "Media",
     "research": "Investigação",
     "cv": "CV",
-    "contact": "Contactos"
+    "contact": "Contactos",
+    "publications": "Publicações"
   },
   "home": {
     "title": "Nuno Ribeiro e Silva",
@@ -72,7 +73,8 @@
     "conferenceComm": "Comunicações em Conferências",
     "interested": "Interesse em Colaboração?",
     "interestedDesc": "Para mais informações sobre publicações, citações ou oportunidades de colaboração académica.",
-    "contactMe": "Contactar"
+    "contactMe": "Contactar",
+    "bridge": "Esta produção resulta da minha formação de base em Administração e Gestão Pública, um percurso que decorre em paralelo com a investigação atual sobre futebol, identidade e política — ambos os eixos enquadrados na Ciência Política."
   },
   "teaching": {
     "title": "Ensino e Supervisão",

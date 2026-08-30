@@ -109,6 +109,9 @@ export default function Publications() {
             <p className="font-opensans text-lg text-blue-100 max-w-2xl">
               {t("publications.subtitle")}
             </p>
+            <p className="font-opensans text-sm text-blue-200/90 max-w-2xl mt-4">
+              {t("publications.bridge")}
+            </p>
           </div>
         </section>
 
