@@ -10,7 +10,7 @@ import SEOMeta from "@/components/SEOMeta";
 import ProtectedImage from "@/components/ProtectedImage";
 
 const FRONT_COVER = "/images/a-bola-e-a-bandeira-front-cover.webp";
-const PROFILE_PHOTO = "/manus-storage/nuno-ribeiro-e-silva-profile_6d07eb39.jpg";
+const PROFILE_PHOTO = "/images/nuno-ribeiro-e-silva-profile.webp";
 
 export default function Home() {
   const { language } = useLanguage();

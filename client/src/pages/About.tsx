@@ -8,7 +8,7 @@ import SEOMeta from "@/components/SEOMeta";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ProtectedImage from "@/components/ProtectedImage";
 
-const PROFILE_PHOTO = "/manus-storage/nuno-ribeiro-e-silva-profile_6d07eb39.jpg";
+const PROFILE_PHOTO = "/images/nuno-ribeiro-e-silva-profile.webp";
 
 export default function About() {
   const { language } = useLanguage();
