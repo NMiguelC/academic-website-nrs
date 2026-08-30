@@ -268,12 +268,12 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="mx-auto flex max-w-md items-center justify-center gap-4 border-t border-border pt-6 text-left">
+            <div className="mx-auto flex max-w-xl items-center justify-center gap-4 border-t border-border pt-6 text-left">
               <ProtectedImage
                 src={PROFILE_PHOTO}
                 alt={pt ? "Fotografia de Nuno Ribeiro e Silva" : "Portrait of Nuno Ribeiro e Silva"}
                 loading="lazy"
-                className="h-[74px] w-[55px] rounded-sm object-cover object-top grayscale-[15%]"
+                className="h-52 w-36 rounded-sm object-cover object-top grayscale-[15%] shadow-md sm:h-56 sm:w-40"
               />
               <p className="font-opensans text-xs leading-relaxed text-foreground/65">
                 {pt ? "Uma plataforma de investigação, docência e intervenção pública." : "A platform for research, teaching and public engagement."}
