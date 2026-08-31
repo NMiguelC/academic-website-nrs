@@ -19,7 +19,7 @@ export default function Home() {
     name: "Nuno Ribeiro e Silva",
     title: "Professor de Ciência Política e Investigador",
     subtitle: "Futebol, Identidade e Sociedade",
-    intro: "Utilizo o futebol para compreender identidade, memória, cultura, poder e conflito nas sociedades contemporâneas.",
+    intro: "Utilizo o futebol como lente para compreender identidade, memória, cultura, poder e conflito nas sociedades contemporâneas.",
     bookCta: "Conhecer o Livro",
     aboutCta: "Sobre o Autor",
     whyTitle: "Porque estudar futebol?",
@@ -49,7 +49,7 @@ export default function Home() {
     name: "Nuno Ribeiro e Silva",
     title: "Professor of Political Science and Researcher",
     subtitle: "Football, Identity and Society",
-    intro: "Using football to understand identity, memory, culture, power and conflict in contemporary societies.",
+    intro: "Using football as a lens to understand identity, memory, culture, power and conflict in contemporary societies.",
     bookCta: "View the Book",
     aboutCta: "About the Author",
     whyTitle: "Why study football?",
@@ -82,7 +82,7 @@ export default function Home() {
       <SEOMeta
         title={pt ? "Início — Futebol, Identidade e Sociedade" : "Home — Football, Identity and Society"}
         description={pt ? "Nuno Ribeiro e Silva - Professor de Ciência Política e Investigador que utiliza o futebol para compreender identidade, memória, cultura, poder e conflito." : "Nuno Ribeiro e Silva - Professor of Political Science and Researcher using football to understand identity, memory, culture, power and conflict."}
-        keywords="futebol, identidade, sociedade, ciência política, Nuno Ribeiro e Silva, A Bola e a Bandeira"
+        keywords="futebol e sociedade, futebol e identidade, futebol e política, identidade coletiva, sociologia do futebol, ciência política, Nuno Ribeiro e Silva, A Bola e a Bandeira"
         ogImage={FRONT_COVER}
       />
 
@@ -103,10 +103,10 @@ export default function Home() {
                   <h1 className="font-editorial text-4xl font-semibold leading-tight md:text-6xl mb-2">
                     {copy.name}
                   </h1>
-                  <p className="font-montserrat text-xl text-blue-100 mb-3">
+                  <p className="font-montserrat text-xl font-semibold text-blue-100 mb-3 md:text-2xl">
                     {copy.title}
                   </p>
-                  <p className="font-editorial text-2xl italic text-blue-200">
+                  <p className="font-editorial text-2xl font-medium italic text-blue-200">
                     {copy.subtitle}
                   </p>
                 </div>
@@ -268,14 +268,14 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="mx-auto flex max-w-xl items-center justify-center gap-4 border-t border-border pt-6 text-left">
+            <div className="mx-auto flex max-w-md items-center justify-center gap-4 border-t border-border pt-6 text-left">
               <ProtectedImage
                 src={PROFILE_PHOTO}
                 alt={pt ? "Fotografia de Nuno Ribeiro e Silva" : "Portrait of Nuno Ribeiro e Silva"}
                 loading="lazy"
-                className="h-52 w-36 rounded-sm object-cover object-top grayscale-[15%] shadow-md sm:h-56 sm:w-40"
+                className="h-[74px] w-[55px] rounded-sm object-cover object-top grayscale-[15%]"
               />
-              <p className="font-opensans text-xs leading-relaxed text-foreground/65">
+              <p className="font-opensans text-sm leading-relaxed text-foreground/65">
                 {pt ? "Uma plataforma de investigação, docência e intervenção pública." : "A platform for research, teaching and public engagement."}
               </p>
             </div>

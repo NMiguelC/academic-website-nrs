@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
-import { Lightbulb, Users, TrendingUp } from "lucide-react";
+import { Lightbulb, Users, TrendingUp, Trophy, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SEOMeta from "@/components/SEOMeta";
 
@@ -67,7 +68,7 @@ export default function Projects() {
 
   return (
     <>
-      <SEOMeta title={t("projects.title")} description={t("projects.subtitle")} />
+      <SEOMeta title={t("projects.title")} description={t("projects.subtitle")} keywords="investigação, futebol e identidade, futebol e sociedade, ciência política, administração pública, governação, Nuno Ribeiro e Silva" />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16 md:py-24">
@@ -78,6 +79,47 @@ export default function Projects() {
             <p className="font-opensans text-lg text-blue-100 max-w-2xl">
               {t("projects.subtitle")}
             </p>
+          </div>
+        </section>
+
+        {/* Duas Linhas de Investigação — apresentação equilibrada */}
+        <section className="py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <p className="font-opensans text-base leading-relaxed text-foreground/75 mb-12 max-w-3xl">
+              {t("projects.twoAxesIntro")}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-lightGray rounded-lg p-8 border-t-4 border-primary">
+                <div className="flex items-center gap-3 mb-4">
+                  <Trophy className="text-primary" size={28} aria-hidden="true" />
+                  <h2 className="font-montserrat font-bold text-xl text-foreground">
+                    {t("projects.axisFootballTitle")}
+                  </h2>
+                </div>
+                <p className="font-opensans text-foreground/70 mb-4 leading-relaxed">
+                  {t("projects.axisFootballDesc")}
+                  <Link href="/book" className="text-primary font-semibold hover:underline">A Bola e a Bandeira</Link>
+                  {t("projects.axisFootballDescEnd")}
+                </p>
+                <p className="font-opensans text-sm text-foreground/60 mb-4 leading-relaxed">
+                  {t("projects.axisFootballThemes")}
+                </p>
+                <Link href="/book" className="inline-flex items-center gap-2 font-opensans text-sm font-semibold text-primary hover:underline">
+                  {t("projects.axisFootballCta")} <ArrowRight size={16} />
+                </Link>
+              </div>
+              <div className="bg-lightGray rounded-lg p-8 border-t-4 border-primary">
+                <div className="flex items-center gap-3 mb-4">
+                  <Lightbulb className="text-primary" size={28} aria-hidden="true" />
+                  <h2 className="font-montserrat font-bold text-xl text-foreground">
+                    {t("projects.axisPublicTitle")}
+                  </h2>
+                </div>
+                <p className="font-opensans text-foreground/70 mb-4 leading-relaxed">
+                  {t("projects.axisPublicDesc")}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -107,7 +107,15 @@
     "completed": "Completed Projects",
     "partnerships": "Academic Partnerships and Collaborations",
     "inProgress": "In Progress",
-    "impact": "Research Impact"
+    "impact": "Research Impact",
+    "twoAxesIntro": "My research is organized around two complementary lines within Political Science: the study of football as an identity-based and cultural phenomenon, and the analysis of governance and public administration. Both share the same underlying interest — understanding how power is exercised and organized in contemporary societies.",
+    "axisFootballTitle": "Football, Identity and Society",
+    "axisFootballDesc": "Current research axis, focused on analyzing football as a social and political laboratory. The flagship output of this line is the book ",
+    "axisFootballDescEnd": ", featuring 21 international case studies on nationalism, collective memory and power.",
+    "axisFootballCta": "Explore the Book",
+    "axisFootballThemes": "Thematic focus: nationalisms and regionalisms · historical memory and collective rituals · geopolitics and supporter activism · institutional power in clubs and national teams.",
+    "axisPublicTitle": "Political Science, Public Management and Administration",
+    "axisPublicDesc": "Long-standing research line on governance, public administration and social policy, with active and ongoing output."
   },
   "contact": {
     "title": "Contact",
@@ -123,7 +131,9 @@
     "send": "Send Message",
     "sending": "Sending...",
     "success": "Message sent successfully! I will get back to you soon.",
-    "professionalNetworks": "Professional Networks and Academic Profiles"
+    "professionalNetworks": "Professional Networks and Academic Profiles",
+    "availabilityTitle": "Availability",
+    "availabilityText": "I am available for interviews, conference invitations, debates, opinion pieces, expert commentary and academic collaborations, on football, identity and society, as well as on governance and public administration."
   },
   "blog": {
     "title": "Articles & Essays",

@@ -67,6 +67,10 @@ export default function Contact() {
           <div className="container mx-auto px-4">
             <h1 className="mb-4 font-montserrat text-4xl font-bold md:text-5xl">{t("contact.title")}</h1>
             <p className="max-w-2xl font-opensans text-lg text-blue-100">{t("contact.subtitle")}</p>
+            <div className="mt-6 max-w-2xl rounded-lg border border-white/20 bg-white/10 p-5">
+              <p className="mb-1 font-opensans text-xs font-semibold uppercase tracking-[0.14em] text-blue-200">{t("contact.availabilityTitle")}</p>
+              <p className="font-opensans text-sm leading-relaxed text-blue-50">{t("contact.availabilityText")}</p>
+            </div>
           </div>
         </section>
 

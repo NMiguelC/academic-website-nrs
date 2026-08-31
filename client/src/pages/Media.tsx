@@ -21,15 +21,15 @@ const formatsEN = [
 ];
 
 const themesPT = [
-  ["RTP / TSF / Antena 1", "O Estádio como Espelho Político", "Análise em direto sobre nacionalismos, tensões geopolíticas e manifestações de identidade coletiva em grandes competições internacionais."],
-  ["Público / Expresso / Observador", "Ensaios de Sociologia do Desporto", "Artigos de opinião e entrevistas de profundidade sobre os 21 estudos de caso de A Bola e a Bandeira, explorando o cruzamento entre o poder e as claques."],
-  ["Colóquios e Debates", "A Politologia por Trás das Quatro Linhas", "Conversas longas sobre a anatomia do poder nos clubes, a memória histórica e a forma como o desporto reflete a democracia contemporânea."],
+  ["Eixo 01", "O Estádio como Espelho Político", "Nacionalismos, tensões geopolíticas e manifestações de identidade coletiva em grandes competições internacionais."],
+  ["Eixo 02", "Sociologia do Desporto", "Leituras a partir dos 21 estudos de caso de A Bola e a Bandeira, sobre o cruzamento entre poder institucional e claques."],
+  ["Eixo 03", "A Politologia por Trás das Quatro Linhas", "A anatomia do poder nos clubes, a memória histórica e a forma como o desporto reflete a democracia contemporânea."],
 ];
 
 const themesEN = [
-  ["RTP / TSF / Antena 1", "The Stadium as a Political Mirror", "Live analysis of nationalisms, geopolitical tensions, and expressions of collective identity in major international competitions."],
-  ["Público / Expresso / Observador", "Essays in the Sociology of Sport", "In-depth opinion writing and interviews on the 21 case studies in A Bola e a Bandeira, exploring the intersection between power and supporter groups."],
-  ["Colloquia and Debates", "The Political Science Behind the Touchline", "Long-form conversations about power in clubs, historical memory, and the way sport reflects contemporary democracy."],
+  ["Axis 01", "The Stadium as a Political Mirror", "Nationalisms, geopolitical tensions, and expressions of collective identity in major international competitions."],
+  ["Axis 02", "Sociology of Sport", "Readings drawn from the 21 case studies in A Bola e a Bandeira, on the intersection between institutional power and supporter groups."],
+  ["Axis 03", "The Political Science Behind the Touchline", "Power in clubs, historical memory, and the way sport reflects contemporary democracy."],
 ];
 
 export default function Media() {
@@ -60,7 +60,7 @@ export default function Media() {
 
   return (
     <>
-      <SEOMeta title={copy.title} description={copy.subtitle} keywords="media, entrevistas, podcasts, artigos, conferências, RTP, Expresso, Público, Nuno Ribeiro e Silva" />
+      <SEOMeta title={copy.title} description={copy.subtitle} keywords="media, entrevistas, podcasts, artigos de opinião, conferências, sociologia do futebol, futebol e política, Nuno Ribeiro e Silva" />
       <main className="flex-1">
         <section className="bg-primary py-16 text-white md:py-24">
           <div className="container mx-auto max-w-5xl px-4">

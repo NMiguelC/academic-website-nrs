@@ -65,7 +65,7 @@ export default function About() {
 
   return (
     <>
-      <SEOMeta title={copy.title} description={copy.subtitle} keywords="Nuno Ribeiro e Silva, Political Science, football, identity, memory, nationalism, culture, society" />
+      <SEOMeta title={copy.title} description={copy.subtitle} keywords="Nuno Ribeiro e Silva, Ciência Política, futebol e identidade, futebol e sociedade, cultura futebolística, identidade coletiva, nacionalismo, memória coletiva" />
       <main className="flex-1">
         <section className="bg-primary py-16 text-white md:py-24">
           <div className="container mx-auto max-w-4xl px-4">

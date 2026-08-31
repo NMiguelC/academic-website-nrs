@@ -107,7 +107,15 @@
     "completed": "Projetos Concluídos",
     "partnerships": "Parcerias e Colaborações",
     "inProgress": "Em curso",
-    "impact": "Impacto"
+    "impact": "Impacto",
+    "twoAxesIntro": "A minha investigação organiza-se em duas linhas complementares dentro da Ciência Política: o estudo do futebol como fenómeno identitário e cultural, e a análise da governação e administração pública. Ambas partilham o mesmo interesse de fundo — compreender como se exerce e se organiza o poder nas sociedades contemporâneas.",
+    "axisFootballTitle": "Futebol, Identidade e Sociedade",
+    "axisFootballDesc": "Eixo atual de investigação, centrado na análise do futebol como laboratório social e político. O produto de referência desta linha é o livro ",
+    "axisFootballDescEnd": ", com 21 estudos de caso internacionais sobre nacionalismo, memória coletiva e poder.",
+    "axisFootballCta": "Explorar o Livro",
+    "axisFootballThemes": "Eixos temáticos: nacionalismos e regionalismos · memória histórica e rituais coletivos · geopolítica e ativismo de claques · poder institucional nos clubes e seleções.",
+    "axisPublicTitle": "Ciência Política, Gestão e Administração Pública",
+    "axisPublicDesc": "Linha de investigação de longo prazo sobre governação, administração pública e políticas sociais, com produção ativa e continuada."
   },
   "contact": {
     "title": "Contactos",
@@ -123,7 +131,9 @@
     "send": "Enviar Mensagem",
     "sending": "Enviando...",
     "success": "Mensagem enviada com sucesso!",
-    "professionalNetworks": "Redes Profissionais"
+    "professionalNetworks": "Redes Profissionais",
+    "availabilityTitle": "Disponibilidade",
+    "availabilityText": "Encontro-me disponível para entrevistas, conferências, debates, artigos de opinião, comentários especializados e colaborações académicas, sobre futebol, identidade e sociedade, ou sobre governação e administração pública."
   },
   "blog": {
     "title": "Artigos e Ensaios",
